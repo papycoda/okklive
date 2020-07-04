@@ -34,6 +34,4 @@ urlpatterns = [
     
 ]
 
-urlpatterns = patterns('',
-    ,
 
