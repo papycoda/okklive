@@ -16,6 +16,8 @@ Including another URLconf
 
 from django.urls import path
 from . import views
+from django.contrib.staticfiles.storage import staticfiles_storage
+from django.views.generic.base import RedirectView
 
 app_name = "main"
 urlpatterns = [
@@ -23,7 +25,15 @@ urlpatterns = [
     path("register/", views.register, name ="register"),
     path("logout/",views.logout_request,name = "logout"),
     path("login/",views.login_request,name = "login"),
+    url(r'^favicon.ico$',
+    RedirectView.as_view(url=staticfiles_storage.url('favicon.ico'),
+            permanent=False),
+        name='favicon'
+    )
    # path("dashboard/",views.dashboard,name = "dashboard"),
     
 ]
+
+urlpatterns = patterns('',
+    ,
 
