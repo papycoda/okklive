@@ -1,1 +1,1 @@
-web: gunicorn okkbuild.wsgi --log-file -
+web:gunicorn okkbuild.wsgi --log-file -
