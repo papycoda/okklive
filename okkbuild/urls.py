@@ -22,11 +22,11 @@ urlpatterns = [
     path('', include('main.urls')),
     path('admin/', admin.site.urls),
     path('dashboard/',include('dashboard.urls')),
-    url(r'^favicon.ico$',
-        RedirectView.as_view(url=staticfiles_storage.url('favicon.ico'),
-                             permanent=False),
-        name='favicon'
-        )
+    # url(r'^favicon.ico$',
+    #     RedirectView.as_view(url=staticfiles_storage.url('favicon.ico'),
+    #                          permanent=False),
+    #     name='favicon'
+    #     )
     #path('accounts/',include('accounts.urls',namespace='accounts')),
 ]
 admin.site.site_header = 'OKK PMS ADMINISTRATION'
