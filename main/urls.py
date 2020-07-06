@@ -29,7 +29,7 @@ urlpatterns = [
     # RedirectView.as_view(url=staticfiles_storage.url('favicon.ico'),
     #         permanent=False),
     #     name='favicon'
-    )
+    #)
    # path("dashboard/",views.dashboard,name = "dashboard"),
     
 ]
