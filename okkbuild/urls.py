@@ -29,4 +29,4 @@ urlpatterns = [
     #     )
     #path('accounts/',include('accounts.urls',namespace='accounts')),
 ]
-admin.site.site_header = 'OKK PMS ADMINISTRATION'
+admin.site.site_header = 'OKK PMS ADMIN'
