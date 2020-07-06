@@ -30,7 +30,7 @@ SECRET_KEY = 'z^$g^pk*wr35f8cwokl9+_5@ys43vt$_!1xkp5&vhar$@=3$pk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['okkpms.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['okkpms.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -147,3 +147,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
+STATIC_ROOT = [os.path.join(BASE_DIR, 'staticfiles'),]
